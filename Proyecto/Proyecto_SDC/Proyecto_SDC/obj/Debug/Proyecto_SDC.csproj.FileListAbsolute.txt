@@ -1,0 +1,13 @@
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\bin\Debug\Proyecto_SDC.exe.config
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\bin\Debug\Proyecto_SDC.exe
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\bin\Debug\Proyecto_SDC.pdb
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.csprojResolveAssemblyReference.cache
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.Interfaz.FRM_Principal.resources
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.FRM_Login.resources
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.Interfaz.FRM_RegistrarEquipo.resources
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.FRM_RegitrarCliente.resources
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.Properties.Resources.resources
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.csproj.GenerateResource.Cache
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.csproj.CoreCompileInputs.cache
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.exe
+C:\Users\solec\Documents\Proyecto_SDC\Proyecto_SDC\Proyecto_SDC\obj\Debug\Proyecto_SDC.pdb
