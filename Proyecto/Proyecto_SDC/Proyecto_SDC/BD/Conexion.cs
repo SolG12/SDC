@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Odbc;
 using System.Data;
 
-namespace Proyecto_SDC
+namespace Proyecto_SDC.BD
 {
     class Conexion
     {
@@ -18,10 +18,10 @@ namespace Proyecto_SDC
             ConexionMYSQL.Open();
         }
 
-        public DataSet EjecutarConsulta(string SQL)
+        public DataTable EjecutarConsulta(string SQL)
         {
             OdbcDataAdapter AdaptadorDatos = new OdbcDataAdapter(SQL, ConexionMYSQL);
-            DataSet Result = new DataSet();
+            DataTable Result = new DataTable();
             AdaptadorDatos.Fill(Result);
             return Result;
         }

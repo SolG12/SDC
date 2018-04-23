@@ -45,6 +45,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD\Conexion.cs" />
+    <Compile Include="Datos\Cliente.cs" />
+    <Compile Include="Datos\Equipo.cs" />
+    <Compile Include="Interfaz\FRM_BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FRM_BuscarCliente.Designer.cs">
+      <DependentUpon>FRM_BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FRM_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FRM_Consulta.Designer.cs">
+      <DependentUpon>FRM_Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\FRM_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,8 +84,16 @@
     <Compile Include="Interfaz\FRM_RegitrarCliente.Designer.cs">
       <DependentUpon>FRM_RegitrarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Logica\ControlCliente.cs" />
+    <Compile Include="Logica\ControlEquipo.cs" />
+    <Compile Include="Logica\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaz\FRM_BuscarCliente.resx">
+      <DependentUpon>FRM_BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FRM_Consulta.resx">
+      <DependentUpon>FRM_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\FRM_Principal.resx">
       <DependentUpon>FRM_Principal.cs</DependentUpon>
     </EmbeddedResource>

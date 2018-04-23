@@ -17,7 +17,7 @@ namespace Proyecto_SDC.Logica
         {
             mConexion = new Conexion();
             mConexion.Conectar("MySQL ODBC 5.2w Driver", "localhost",
-                "mantenimiento", "admin", "1234");
+                "mantenimientobd", "root", "");
         }
 
         public void AgregarCliente(Cliente mCliente)
@@ -29,12 +29,13 @@ namespace Proyecto_SDC.Logica
             mConexion.EjecutarActualizacion(SQL);
         }
 
-        public DataSet ConsultarCliente()
+        public DataTable ConsultarCliente()
         {
             String SQL = "select * from cliente;";
-            DataSet ListaCliente = mConexion.EjecutarConsulta(SQL);
+            DataTable ListaCliente = mConexion.EjecutarConsulta(SQL);
             return ListaCliente;
         }
+
         public void ModificarCliente(Cliente mCliente)
         {
             String SQL = "update cliente set nombre='?1', direccion='?2', " + "telefono='?3'";

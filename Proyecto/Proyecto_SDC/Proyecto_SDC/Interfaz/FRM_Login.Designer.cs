@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnIniciar = new System.Windows.Forms.Button();
+            this.BtnIniciar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnIniciar
+            // BtnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(97, 144);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
-            this.btnIniciar.TabIndex = 1;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.BtnIniciar.Location = new System.Drawing.Point(97, 144);
+            this.BtnIniciar.Name = "BtnIniciar";
+            this.BtnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.BtnIniciar.TabIndex = 1;
+            this.BtnIniciar.Text = "Iniciar";
+            this.BtnIniciar.UseVisualStyleBackColor = true;
+            this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click_1);
             // 
             // label1
             // 
@@ -73,6 +74,7 @@
             // 
             this.txtPass.Location = new System.Drawing.Point(118, 89);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(100, 20);
             this.txtPass.TabIndex = 5;
             // 
@@ -86,7 +88,7 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.BtnIniciar);
             this.Name = "FRM_Login";
             this.Text = "Log in";
             this.ResumeLayout(false);
@@ -95,7 +97,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button BtnIniciar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUser;

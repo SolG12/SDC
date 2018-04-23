@@ -11,6 +11,7 @@ namespace Proyecto_SDC.Datos
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
-     
+        public string No_Orden { get; set; }
+
     }
 }

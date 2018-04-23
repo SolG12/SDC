@@ -28,58 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnRCliente = new System.Windows.Forms.Button();
+            this.BtnConsultar = new System.Windows.Forms.Button();
+            this.BtnREquipo = new System.Windows.Forms.Button();
+            this.BtnCerra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnRCliente
             // 
-            this.button1.Location = new System.Drawing.Point(89, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Registrar Cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnRCliente.Location = new System.Drawing.Point(91, 28);
+            this.BtnRCliente.Name = "BtnRCliente";
+            this.BtnRCliente.Size = new System.Drawing.Size(93, 35);
+            this.BtnRCliente.TabIndex = 0;
+            this.BtnRCliente.Text = "Registrar Cliente";
+            this.BtnRCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRCliente.UseVisualStyleBackColor = true;
+            this.BtnRCliente.Click += new System.EventHandler(this.BtnRCliente_Click);
             // 
-            // button2
+            // BtnConsultar
             // 
-            this.button2.Location = new System.Drawing.Point(89, 139);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Consultar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnConsultar.Location = new System.Drawing.Point(89, 69);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Size = new System.Drawing.Size(95, 33);
+            this.BtnConsultar.TabIndex = 1;
+            this.BtnConsultar.Text = "Consultar Estado";
+            this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
-            // button3
+            // BtnREquipo
             // 
-            this.button3.Location = new System.Drawing.Point(89, 71);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 26);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Registrar Equipo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnREquipo.Location = new System.Drawing.Point(89, 108);
+            this.BtnREquipo.Name = "BtnREquipo";
+            this.BtnREquipo.Size = new System.Drawing.Size(95, 36);
+            this.BtnREquipo.TabIndex = 2;
+            this.BtnREquipo.Text = "Registrar Equipo";
+            this.BtnREquipo.UseVisualStyleBackColor = true;
+            this.BtnREquipo.Click += new System.EventHandler(this.BtnREquipo_Click);
             // 
-            // button4
+            // BtnCerra
             // 
-            this.button4.Location = new System.Drawing.Point(89, 105);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 26);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Cerrar ";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnCerra.Location = new System.Drawing.Point(89, 150);
+            this.BtnCerra.Name = "BtnCerra";
+            this.BtnCerra.Size = new System.Drawing.Size(95, 33);
+            this.BtnCerra.TabIndex = 3;
+            this.BtnCerra.Text = "Cerrar ";
+            this.BtnCerra.UseVisualStyleBackColor = true;
+            this.BtnCerra.Click += new System.EventHandler(this.BtnCerra_Click);
             // 
             // FRM_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnCerra);
+            this.Controls.Add(this.BtnREquipo);
+            this.Controls.Add(this.BtnConsultar);
+            this.Controls.Add(this.BtnRCliente);
             this.Name = "FRM_Principal";
             this.Text = "FRM_Principal";
             this.ResumeLayout(false);
@@ -88,9 +92,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnRCliente;
+        private System.Windows.Forms.Button BtnConsultar;
+        private System.Windows.Forms.Button BtnREquipo;
+        private System.Windows.Forms.Button BtnCerra;
     }
 }

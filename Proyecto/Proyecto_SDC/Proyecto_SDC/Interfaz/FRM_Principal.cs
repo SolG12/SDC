@@ -17,9 +17,31 @@ namespace Proyecto_SDC.Interfaz
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnRCliente_Click(object sender, EventArgs e)
         {
+            FRM_RegitrarCliente mFRM_RegitrarCliente = new FRM_RegitrarCliente();
+            this.Hide();
+            mFRM_RegitrarCliente.Show();
 
+        }
+
+        private void BtnREquipo_Click(object sender, EventArgs e)
+        {
+            FRM_RegistrarEquipo mFRM_RegistrarEquipo = new FRM_RegistrarEquipo();
+            this.Hide();
+            mFRM_RegistrarEquipo.Show();
+        }
+
+        private void BtnConsultar_Click(object sender, EventArgs e)
+        {
+            FRM_Consulta mFRM_Consulta = new FRM_Consulta();
+            this.Hide();
+            mFRM_Consulta.Show();
+        }
+
+        private void BtnCerra_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
