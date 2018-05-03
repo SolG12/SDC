@@ -79,11 +79,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.BtnCerra);
             this.Controls.Add(this.BtnREquipo);
             this.Controls.Add(this.BtnConsultar);
             this.Controls.Add(this.BtnRCliente);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FRM_Principal";
             this.Text = "FRM_Principal";
             this.ResumeLayout(false);

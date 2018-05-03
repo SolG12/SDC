@@ -1,0 +1,11 @@
+Instrucciones:
+1.- Ejecutar el wampServer(Descargarlo en caso de no tenerlo)
+Link de descarga:
+	-> 32 Bits----> http://www.wampserver.com/en/download-wampserver-32bits/
+	-> 64 Bits----> http://www.wampserver.com/en/download-wampserver-64bits/
+2.- Checar que el Wamp Este prendido(El icono debe de estar en verde), en caso de que no sea asi, ir al donde esta el IIS y detener los servicios, al hacer esto reiniciamos los servicios del wamp.
+3.- Damos Clic derecho al icono del Wamp y nos vamos a la opcion donde dice "phpMyadmin"
+4.- Creamos una base se datos para poder importar la que esta dentro de este folder.
+5.- Ejecutar El conector odbc.
+6.- Abrimos nuestro programa y empezamos a navegar dentro de el.
+

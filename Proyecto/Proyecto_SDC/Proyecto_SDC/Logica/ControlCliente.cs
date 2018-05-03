@@ -36,6 +36,14 @@ namespace Proyecto_SDC.Logica
             return ListaCliente;
         }
 
+        public DataTable BuscarCliente(string Nombre)
+        {
+            String SQL = "select * from cliente where nombre like '?1';";
+            SQL = SQL.Replace("?1", Nombre);
+            DataTable ListaCliente = mConexion.EjecutarConsulta(SQL);
+            return ListaCliente;
+        }
+
         public void ModificarCliente(Cliente mCliente)
         {
             String SQL = "update cliente set nombre='?1', direccion='?2', " + "telefono='?3'";

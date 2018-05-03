@@ -65,24 +65,26 @@
             // 
             // txtUser
             // 
+            this.txtUser.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.Location = new System.Drawing.Point(118, 50);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.Size = new System.Drawing.Size(126, 31);
             this.txtUser.TabIndex = 4;
             // 
             // txtPass
             // 
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(118, 89);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.Size = new System.Drawing.Size(126, 31);
             this.txtPass.TabIndex = 5;
             // 
             // FRM_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 208);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);

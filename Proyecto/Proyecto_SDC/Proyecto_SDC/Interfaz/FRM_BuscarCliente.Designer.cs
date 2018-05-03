@@ -30,6 +30,8 @@
         {
             this.dgv_clientes = new System.Windows.Forms.DataGridView();
             this.BtnMenu = new System.Windows.Forms.Button();
+            this.txtBusqueada = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,13 +39,17 @@
             // 
             this.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_clientes.Location = new System.Drawing.Point(12, 12);
+            this.dgv_clientes.MultiSelect = false;
             this.dgv_clientes.Name = "dgv_clientes";
+            this.dgv_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_clientes.Size = new System.Drawing.Size(528, 327);
             this.dgv_clientes.TabIndex = 0;
+            this.dgv_clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_clientes_CellClick);
+            this.dgv_clientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_clientes_CellContentClick);
             // 
             // BtnMenu
             // 
-            this.BtnMenu.Location = new System.Drawing.Point(227, 372);
+            this.BtnMenu.Location = new System.Drawing.Point(12, 353);
             this.BtnMenu.Name = "BtnMenu";
             this.BtnMenu.Size = new System.Drawing.Size(75, 23);
             this.BtnMenu.TabIndex = 1;
@@ -51,11 +57,31 @@
             this.BtnMenu.UseVisualStyleBackColor = true;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
+            // txtBusqueada
+            // 
+            this.txtBusqueada.Location = new System.Drawing.Point(345, 353);
+            this.txtBusqueada.Name = "txtBusqueada";
+            this.txtBusqueada.Size = new System.Drawing.Size(100, 20);
+            this.txtBusqueada.TabIndex = 2;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(465, 353);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // FRM_BuscarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(594, 407);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBusqueada);
             this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.dgv_clientes);
             this.Name = "FRM_BuscarCliente";
@@ -64,6 +90,7 @@
             this.Load += new System.EventHandler(this.FRM_BuscarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,5 +98,7 @@
 
         private System.Windows.Forms.DataGridView dgv_clientes;
         private System.Windows.Forms.Button BtnMenu;
+        private System.Windows.Forms.TextBox txtBusqueada;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

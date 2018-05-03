@@ -44,9 +44,9 @@
             this.DgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvConsulta.Location = new System.Drawing.Point(24, 72);
             this.DgvConsulta.Name = "DgvConsulta";
+            this.DgvConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvConsulta.Size = new System.Drawing.Size(577, 268);
             this.DgvConsulta.TabIndex = 0;
-            this.DgvConsulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvConsulta_CellContentClick);
             // 
             // label1
             // 
@@ -102,6 +102,7 @@
             this.BtnElininar.TabIndex = 6;
             this.BtnElininar.Text = "Eliminar";
             this.BtnElininar.UseVisualStyleBackColor = true;
+            this.BtnElininar.Click += new System.EventHandler(this.BtnElininar_Click);
             // 
             // BtnMenu
             // 
@@ -117,6 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(787, 426);
             this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.BtnElininar);

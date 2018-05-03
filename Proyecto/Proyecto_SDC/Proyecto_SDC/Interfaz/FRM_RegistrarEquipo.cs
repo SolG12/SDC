@@ -75,7 +75,11 @@ namespace Proyecto_SDC.Interfaz
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
             FRM_BuscarCliente mFRM_BuscarCliente = new FRM_BuscarCliente();
-            mFRM_BuscarCliente.ShowDialog();
+            if (mFRM_BuscarCliente.ShowDialog() == DialogResult.OK)
+            {
+                txtCliente.Text = mFRM_BuscarCliente.Seleccion.ToString();
+            }
+           
         }
     }
 }

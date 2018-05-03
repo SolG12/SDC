@@ -15,6 +15,6 @@ namespace Proyecto_SDC.Datos
         public string Funcionalidad { get; set; }
         public string Tipo { get; set; }
         public string No_Orden { get; set; }
-        
+        public string Descripcion { get; set; }
     }
 }
